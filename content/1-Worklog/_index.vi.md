@@ -6,35 +6,29 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
+---
 
+Trong suốt **8 tuần** tham gia chương trình **First Cloud Journey**, tôi đã từng bước tìm hiểu các dịch vụ của AWS và áp dụng kiến thức để xây dựng một dự án thực tế.
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+Dự án được lựa chọn là **hệ thống chatbot tư vấn tuyển sinh** sử dụng **Large Language Model (LLM)** kết hợp **Retrieval-Augmented Generation (RAG)** trên nền tảng AWS. Trong quá trình thực hiện, tôi đã nghiên cứu các dịch vụ AWS, thiết kế kiến trúc hệ thống, xây dựng pipeline xử lý dữ liệu, phát triển ứng dụng và hoàn thiện tài liệu Workshop.
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
+Worklog dưới đây ghi lại các công việc đã thực hiện, kiến thức đã học và kết quả đạt được theo từng tuần.
 
-**Tuần 2:** [Làm công việc A...](1.2-week2/)
+## Nội dung Worklog
 
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
+**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản](1.1-week1/)
 
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
+**Tuần 2:** [Tìm hiểu các dịch vụ Compute và Networking trên AWS (Amazon EC2, Amazon VPC, Amazon EBS)](1.2-week2/)
 
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
+**Tuần 3:** [Tìm hiểu các dịch vụ cơ sở dữ liệu trên AWS (Amazon RDS và Amazon DynamoDB)](1.3-week3/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 4:** [Đề xuất dự án, nghiên cứu Amazon S3, Amazon Bedrock và thiết kế kiến trúc hệ thống](1.4-week4/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 5:** [Xây dựng pipeline Retrieval-Augmented Generation (RAG): tiền xử lý dữ liệu, Chunking, Embedding và Retrieval](1.5-week5/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 6:** [Phát triển Backend với AWS Lambda, Amazon API Gateway và tích hợp Amazon Bedrock](1.6-week6/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 7:** [Phát triển giao diện người dùng, tích hợp hệ thống và kiểm thử chatbot](1.7-week7/)
 
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
-
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
-
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 8:** [Hoàn thiện hệ thống, tối ưu kiến trúc, xây dựng Workshop và triển khai lên GitHub Pages](1.8-week8/)

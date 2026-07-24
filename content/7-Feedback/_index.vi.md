@@ -5,40 +5,24 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
-
 ### Đánh giá chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+"Chuyên nghiệp, kỷ luật, thân thiện" là những từ mà mình sẽ dùng để tóm tắt lại hành trình 2 tháng mà bản thân đã đồng hành với chương trình First Cloud AI Journey. Tất cả mọi thứ từ không gian làm việc, cơ sở vật chất cho đến con người, bất kỳ yếu tố nào cũng đều 10 điểm không có nhưng. Việc quy định giờ học tập, làm việc từ 9h-17h cũng giúp mình rất nhiều trong việc rèn luyện tính kỷ luật trong công việc, mình chăm chỉ hơn, ít bị xao nhãng, thiếu tập trung hơn và tất nhiên là năng suất làm việc cao hơn hẳn trước khi tham gia FCAJ. 
 
 **2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Đây là yếu tố gây ấn tượng mạnh nhất đối với bản thân mình khi tham gia thực tập tại FCAJ. Các anh chị mentor thật sự dễ thương vô cùng. Họ luôn sẵn sàng hỗ trợ các bạn sinh viên với tinh thần hăng hái nhất không chỉ trong những buổi làm việc trực tiếp tại văn phòng mà là bất cứ lúc nào, bất kỳ thời gian nào. Đặc biệt nhất là anh Thiện, con người đã giúp mình biết đến và tham gia vào chương trình này.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+**3. Cơ hội học hỏi & phát triển kỹ năng**  
+Nếu mọi người chưa biết thì thị trường điện toán đám mây (Cloud Computing) tại Việt Nam là một trong những ngành có tốc độ tăng trưởng nhanh nhất ASEAN (gần 30%/năm). FCAJ sẽ là một chương trình tuyệt vời đối với các bạn muốn học hỏi thêm về các dịch vụ của AWS - một trong những công ty công nghệ lớn nhất hiện tại. Và nếu bạn là một sinh viên thuộc nhóm ngành công nghệ thông tin thì càng không thể bỏ qua, vì mình thấy những kiến thức học được thực sực rất hữu ích nếu các bạn muốn phát triển, mở ra thêm nhiều cơ hội việc làm hơn trong tương lai. 
+  
+### Đề xuất
+Tuy nhiên vẫn có một vấn đề mà mình thấy là chưa thuận lợi nhất cho các bạn sinh viên thực tập. Đó là việc đăng ký lên văn phòng khá là may rủi, và nếu đăng ký thành công thì thời gian báo trước cũng khá là ngắn (chỉ 1 ngày trước ngày đăng ký). Mong các anh chị mentor/admin sẽ có một giải pháp để giúp các bạn sinh viên thuận tiện hơn trong vấn đề này. 
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
-
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
-
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
-
-
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+Cuối cùng mình chỉ muốn nói: <br>
+"Mình yêu FCAJ" <br>
+"Mình yêu FCAJ" <br>
+"Mình yêu FCAJ" <br> 
+Điều gì quan trọng nói 3 lần!
 
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):

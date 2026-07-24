@@ -1,59 +1,40 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-7-11
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
+* Xây dựng RAG pipeline
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tiền xử lý dữ liệu <br> - Chuyển đổi từ pdf sang dạng văn bản có thể xử lý được                                                                                                           | 6/07/2026   | 6/07/2026      |
+| 3   | - Chunking: Chia nhỏ tập dữ liệu                                                                                                                                                            | 7/07/2026   | 7/07/2026      | |
+| 4   | - Chuyển đổi từng đoạn văn bản thành vector số <br> - Chuẩn bị dữ liệu phục vụ cho quá trình tìm kiếm ngữ nghĩa                                                                             | 8/07/2026   | 8/07/2026      | |
+| 5-6 | - Thiết kế quy trình truy xuất tài liệu dựa trên câu hỏi của người dùng <br> - Chuyển câu hỏi thành embedding và tìm kiếm các đoạn văn bản liên quan trong Vector Database <br>             | 9/07/2026   | 10/07/2026      | |                                                                 | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành việc thu thập và tiền xử lý các tài liệu tuyển sinh từ các trường thuộc Đại học Quốc gia TP.HCM.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Chuyển đổi thành công các tài liệu PDF sang dạng văn bản có thể xử lý phục vụ cho hệ thống RAG.
+- Hiểu được vai trò của bước **Chunking** trong hệ thống Retrieval-Augmented Generation (RAG).
+- Thực hiện chia nhỏ tài liệu thành các đoạn văn bản (Chunks) với kích thước phù hợp nhằm đảm bảo khả năng lưu giữ ngữ cảnh và tối ưu hiệu quả truy xuất.
+- Hiểu được nguyên lý hoạt động của **Embedding**, chuyển đổi văn bản thành các vector số để biểu diễn ngữ nghĩa.
+- Xây dựng pipeline tạo Embedding cho toàn bộ tập tài liệu tuyển sinh.
+- Tìm hiểu cơ chế lưu trữ Embedding trong Vector Database và vai trò của Vector Database trong hệ thống RAG.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hiểu được quy trình truy xuất thông tin (Retrieval), bao gồm:
+  - Chuyển đổi câu hỏi của người dùng thành Embedding.
+  - Thực hiện tìm kiếm ngữ nghĩa (Semantic Search).
+  - Truy xuất các đoạn tài liệu có độ tương đồng cao nhất.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thiện pipeline xử lý dữ liệu cho hệ thống RAG theo quy trình:
+- Chuẩn bị dữ liệu và pipeline phục vụ cho việc tích hợp Large Language Model (LLM) ở giai đoạn tiếp theo.

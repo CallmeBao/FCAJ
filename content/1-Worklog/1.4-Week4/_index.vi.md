@@ -1,59 +1,86 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-07-04
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Thống nhất ý tưởng và chốt đề tài xây dụng project
+- Tìm hiểu thêm về S3 bucket, AWS Bedrock
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tiến hành thu thập các tài liệu từ các trường đại học trong 2 năm gần nhất.                                                                                                               | 29/06/2026   | 29/06/2026      |
+| 3   | - Xác định các chức năng chính, phân tích người dùng.                                                                                                                                       | 30/06/2026   | 30/06/2026      |  |
+| 4   | - Nghiên cứu dịch vụ S3 Bucket                                                                                                                                                              | 1/07/2026   | 1/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tìm hiểu về Amazon Bedrock                                                                                                                                                                | 2/07/2026   | 2/07/2026      | <https://docs.aws.amazon.com/bedrock/> |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo Tạo Bucket <br>&emsp; + Upload Object <br>&emsp; + Download Object<br>&emsp; + Xóa Object <br>&emsp;....                                                  | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Hoàn thành việc khảo sát và thu thập các tài liệu tuyển sinh chính thức của các trường thuộc Đại học Quốc gia TP.HCM trong hai năm gần nhất.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Xác định được bài toán và phạm vi của dự án:
+  - Đối tượng sử dụng là học sinh, phụ huynh và giáo viên có nhu cầu tìm hiểu thông tin tuyển sinh.
+  - Mục tiêu xây dựng hệ thống hỏi đáp thông minh sử dụng LLM kết hợp kỹ thuật Retrieval-Augmented Generation (RAG).
+  - Xác định các chức năng chính của hệ thống như:
+    - Trả lời câu hỏi về tuyển sinh.
+    - Tra cứu phương thức xét tuyển.
+    - Tra cứu học phí, chỉ tiêu và ngành đào tạo.
+    - Trích dẫn nguồn tài liệu khi trả lời.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Hiểu được vai trò của **Amazon S3** trong việc lưu trữ dữ liệu trên AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Nắm được các khái niệm cơ bản của Amazon S3:
+  - Bucket
+  - Object
+  - Key
+  - Storage Class
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Biết cách tạo và quản lý S3 Bucket thông qua AWS Management Console.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+- Thực hiện các thao tác cơ bản với Amazon S3:
+  - Tạo Bucket
+  - Upload Object
+  - Download Object
+  - Xóa Object
+  - Cấu hình Bucket Policy và Block Public Access
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Hiểu được vai trò của Amazon S3 trong hệ thống RAG, sử dụng làm nơi lưu trữ tài liệu tuyển sinh trước khi xây dựng Knowledge Base.
 
+- Tìm hiểu về **Amazon Bedrock** và các mô hình nền tảng (Foundation Models) do AWS cung cấp.
 
+- Hiểu được cách Amazon Bedrock hỗ trợ:
+  - Text Generation
+  - Chatbot
+  - Embedding
+  - Retrieval-Augmented Generation (RAG)
+
+- Nắm được quy trình tích hợp Amazon Bedrock vào hệ thống AI:
+  - Người dùng gửi câu hỏi.
+  - Hệ thống truy xuất tài liệu liên quan.
+  - Amazon Bedrock sinh câu trả lời dựa trên ngữ cảnh được cung cấp.
+
+- Bước đầu xây dựng kiến trúc tổng thể cho dự án chatbot tuyển sinh trên AWS sử dụng các dịch vụ:
+  - Amazon S3
+  - AWS Lambda
+  - Amazon API Gateway
+  - Amazon Bedrock
+  - Amazon OpenSearch Serverless (Vector Database)
+  - Amazon CloudWatch
+
+- **Thực hành Amazon EC2:**
+  - Khởi tạo EC2 Instance từ Amazon Machine Image (AMI).
+  - Cấu hình Security Group và Key Pair.
+  - Kết nối EC2 thông qua SSH.
+  - Tạo và gắn (Attach) Amazon EBS Volume vào EC2 Instance.
+  - Thực hiện mount EBS Volume và kiểm tra khả năng lưu trữ trên hệ điều hành Linux.
+  - Hiểu được mối quan hệ giữa EC2 và EBS cũng như các trường hợp sử dụng trong thực tế.
+
+- Đánh giá được tính khả thi của dự án và định hướng lựa chọn kiến trúc **Serverless** nhằm tối ưu chi phí, khả năng mở rộng và giảm công sức quản trị hạ tầng.
