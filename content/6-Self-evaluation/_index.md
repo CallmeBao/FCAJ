@@ -6,15 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
-
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
-
+During my internship at the FCAJ program from **[06/01/2026]** to **[08/15/2026]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
 To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
@@ -33,7 +25,6 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
 
 ### Needs Improvement
-
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* During one of my days at the office, I was slightly distracted and used my phone during working hours. This is a behavior that should not happen in a professional environment. I promise to correct this mistake and will not repeat it.
+* Improve my problem-solving mindset; I need to be more proactive in seeking answers not only from documentation but also from the mentors.
+* Learn to communicate better in daily interactions and work contexts, including handling situations effectively.

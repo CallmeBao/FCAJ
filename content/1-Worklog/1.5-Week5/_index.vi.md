@@ -6,35 +6,41 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-
-
 ### Mục tiêu tuần 5:
 
-* Xây dựng RAG pipeline
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tiền xử lý dữ liệu <br> - Chuyển đổi từ pdf sang dạng văn bản có thể xử lý được                                                                                                           | 6/07/2026   | 6/07/2026      |
-| 3   | - Chunking: Chia nhỏ tập dữ liệu                                                                                                                                                            | 7/07/2026   | 7/07/2026      | |
-| 4   | - Chuyển đổi từng đoạn văn bản thành vector số <br> - Chuẩn bị dữ liệu phục vụ cho quá trình tìm kiếm ngữ nghĩa                                                                             | 8/07/2026   | 8/07/2026      | |
-| 5-6 | - Thiết kế quy trình truy xuất tài liệu dựa trên câu hỏi của người dùng <br> - Chuyển câu hỏi thành embedding và tìm kiếm các đoạn văn bản liên quan trong Vector Database <br>             | 9/07/2026   | 10/07/2026      | |                                                                 | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+- Xây dựng ứng dụng NestJS và đóng gói bằng Docker
+- Thiết lập Amazon ECR và CI/CD pipeline với GitHub Actions
 
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2   | - Khởi tạo project NestJS <br> - Xây dựng cấu trúc module cơ bản (Auth, User, Document) | 6/07/2026 | 6/07/2026 | <https://docs.nestjs.com/> |
+| 3   | - Viết Dockerfile multi-stage cho NestJS <br> - Test build image local | 7/07/2026 | 7/07/2026 | |
+| 4   | - Tạo Amazon ECR Repository <br> - Đẩy Docker image lên ECR lần đầu | 8/07/2026 | 8/07/2026 | <https://docs.aws.amazon.com/ecr/> |
+| 5-6 | - Thiết lập GitHub Actions Workflow: build → push ECR → deploy ECS <br> - Cấu hình IAM Role cho GitHub Actions (OIDC) | 9/07/2026 | 10/07/2026 | <https://docs.github.com/en/actions> |
 
 ### Kết quả đạt được tuần 5:
 
-- Hoàn thành việc thu thập và tiền xử lý các tài liệu tuyển sinh từ các trường thuộc Đại học Quốc gia TP.HCM.
+- Khởi tạo thành công project **NestJS** với cấu trúc module rõ ràng theo Domain-Driven Design.
 
-- Chuyển đổi thành công các tài liệu PDF sang dạng văn bản có thể xử lý phục vụ cho hệ thống RAG.
-- Hiểu được vai trò của bước **Chunking** trong hệ thống Retrieval-Augmented Generation (RAG).
-- Thực hiện chia nhỏ tài liệu thành các đoạn văn bản (Chunks) với kích thước phù hợp nhằm đảm bảo khả năng lưu giữ ngữ cảnh và tối ưu hiệu quả truy xuất.
-- Hiểu được nguyên lý hoạt động của **Embedding**, chuyển đổi văn bản thành các vector số để biểu diễn ngữ nghĩa.
-- Xây dựng pipeline tạo Embedding cho toàn bộ tập tài liệu tuyển sinh.
-- Tìm hiểu cơ chế lưu trữ Embedding trong Vector Database và vai trò của Vector Database trong hệ thống RAG.
+- Hiểu được cách tổ chức code theo module trong NestJS:
+  - Module Auth: đăng ký, đăng nhập, JWT.
+  - Module User: quản lý hồ sơ người dùng.
+  - Module Document: tải lên, tìm kiếm, quản lý tài liệu.
 
-- Hiểu được quy trình truy xuất thông tin (Retrieval), bao gồm:
-  - Chuyển đổi câu hỏi của người dùng thành Embedding.
-  - Thực hiện tìm kiếm ngữ nghĩa (Semantic Search).
-  - Truy xuất các đoạn tài liệu có độ tương đồng cao nhất.
+- Xây dựng thành công **Dockerfile multi-stage**:
+  - Stage 1 (builder): cài đặt dependencies và build TypeScript.
+  - Stage 2 (production): copy dist và node_modules, image nhỏ gọn.
 
-- Hoàn thiện pipeline xử lý dữ liệu cho hệ thống RAG theo quy trình:
-- Chuẩn bị dữ liệu và pipeline phục vụ cho việc tích hợp Large Language Model (LLM) ở giai đoạn tiếp theo.
+- Hiểu được quy trình làm việc với **Amazon ECR**:
+  - Tạo Private Repository.
+  - Authenticate Docker với ECR bằng AWS CLI.
+  - Tag và push image lên ECR.
+
+- Thiết lập **GitHub Actions CI/CD Pipeline** hoàn chỉnh:
+  - Trigger on push to `main` branch.
+  - Build Docker image.
+  - Push image lên Amazon ECR.
+  - Cập nhật ECS Service với image tag mới.
+
+- Cấu hình **IAM OIDC** cho GitHub Actions để xác thực an toàn mà không cần lưu AWS credentials trong secrets.

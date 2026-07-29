@@ -6,121 +6,35 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ x Agentic AI build week 07/25/2026”
 
 ### Event Objectives
-
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The winning teams from the Agentic AI build week competition took turns sharing the products they built during the Agentic AI build week hackathon. I attended as an audience member, and it was truly a memorable experience as it was my first time learning what a hackathon is and how it takes place.
 
 ### Speakers
-
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+There were a total of 5 teams presenting their products that day. Each team had quite a few members, so it is impossible to name everyone, but I definitely must mention the Plan V team. Although this was not the overall winning team of the competition, their product and presentation left quite an impression on me. The team's idea, while quite simple, was highly practical and easy to apply. The participating teams included:
+- One Team
+![One Team](/images/4-Events/4.2-Event1/one%20team.jpg)
+- Plan V Team
+![Plan V](/images/4-Events/4.2-Event1/Plan%20V.jpg)
+- Signal Scout
+![Signal Scout](/images/4-Events/4.2-Event1/signal%20scout.jpg)
+- Six Pillars Team
+![Six Pillars](/images/4-Events/4.2-Event1/six%20pillars.jpg)
+- 3KA Team
+![3KA Team](/images/4-Events/4.2-Event1/3KA.jpg)
+Additionally, there was a special appearance by Mr. Giuseppe Marazzotta - Head of Tech & Solution Architecture ASEAN at AWS, sharing inspiring stories.
+![Mr. Giuseppe Marazzotta](/images/4-Events/4.2-Event1/mr.jpg)
 
 ### Key Highlights
-
-#### Identifying the drawbacks of legacy application architecture
-
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
-
-#### Transitioning to modern application architecture – Microservices
-
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
-
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+As I mentioned above, Plan V's presentation left the deepest impression on me. Their product was the Solution Architect Professional Native App - an application capable of analyzing natural language from users, processing and analyzing it to generate diagrams using official icons from AWS. While other teams faced issues during their demos, this was one of the rare teams that had a very smooth demo. The team proved that a product doesn't have to be massive or complex to be good; the ability to solve problems is what makes a product special.
 
 ### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+During the event that day, I learned quite a lot of things as well as the hackathon competition experiences from the teams. The sharings from the teams were truly useful, as there were even first-time participants among them. Besides Plan V, the ideas of the other teams were also exceptionally good. I was also introduced to and learned about a new AWS service, Amazon Q (formerly CodeWhisperer), along with other AI solutions.
+In addition, the sharings from Mr. Giuseppe Marazzotta were extremely meaningful and worth referencing for any student looking to develop themselves.
 
 ### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+This was perhaps the most special event I have ever attended since I learned about FCAJ. Not only the number of speakers but also the number of audience members was several times higher than normal events. Furthermore, the atmosphere of the event that day was very comfortable. This was probably because the teams were quite young and energetic; they not only shared knowledge but also transmitted motivation and their passion for creativity. It was quite a pity that there wasn't enough time for the teams to expand the Q&A session, but that day was still an extremely useful experience. Perhaps in the future, I will also seek opportunities to participate in a hackathon.
 
 #### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![Group photo](/images/4-Events/4.2-Event1/t%E1%BA%A1p%20the.jpg)

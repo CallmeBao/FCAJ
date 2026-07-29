@@ -6,81 +6,45 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-
-
 ### Mục tiêu tuần 4:
-- Thống nhất ý tưởng và chốt đề tài xây dụng project
-- Tìm hiểu thêm về S3 bucket, AWS Bedrock
+- Thống nhất ý tưởng và chốt đề tài xây dựng project
+- Tìm hiểu Amazon VPC, Subnet, Security Group
+- Tìm hiểu Amazon ECS và mô hình triển khai Fargate
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tiến hành thu thập các tài liệu từ các trường đại học trong 2 năm gần nhất.                                                                                                               | 29/06/2026   | 29/06/2026      |
-| 3   | - Xác định các chức năng chính, phân tích người dùng.                                                                                                                                       | 30/06/2026   | 30/06/2026      |  |
-| 4   | - Nghiên cứu dịch vụ S3 Bucket                                                                                                                                                              | 1/07/2026   | 1/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu về Amazon Bedrock                                                                                                                                                                | 2/07/2026   | 2/07/2026      | <https://docs.aws.amazon.com/bedrock/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo Tạo Bucket <br>&emsp; + Upload Object <br>&emsp; + Download Object<br>&emsp; + Xóa Object <br>&emsp;....                                                  | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2   | - Tìm kiếm và chốt đề tài cho dự án cuối khóa | 29/06/2026 | 29/06/2026 | |
+| 3   | - Xác định các chức năng chính, phân tích người dùng và thiết kế sơ bộ kiến trúc hệ thống | 30/06/2026 | 30/06/2026 | |
+| 4   | - Nghiên cứu Amazon VPC: Public/Private Subnet, NAT Gateway, Internet Gateway, Security Group | 1/07/2026 | 1/07/2026 | <https://docs.aws.amazon.com/vpc/> |
+| 5   | - Tìm hiểu Amazon ECS: Cluster, Service, Task Definition, Fargate Launch Type | 2/07/2026 | 2/07/2026 | <https://docs.aws.amazon.com/ecs/> |
+| 6   | - **Thực hành:** Tạo VPC với Public và Private Subnet, cấu hình Security Group, khởi tạo ECS Cluster Fargate | 3/07/2026 | 3/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 4:
 
-- Hoàn thành việc khảo sát và thu thập các tài liệu tuyển sinh chính thức của các trường thuộc Đại học Quốc gia TP.HCM trong hai năm gần nhất.
+- Hoàn thành việc khảo sát và chốt đề tài cho dự án: Xây dựng một nền tảng web (dạng forum/mạng xã hội học tập) backend bằng **NestJS**, triển khai trên **Amazon ECS Fargate**.
 
 - Xác định được bài toán và phạm vi của dự án:
-  - Đối tượng sử dụng là học sinh, phụ huynh và giáo viên có nhu cầu tìm hiểu thông tin tuyển sinh.
-  - Mục tiêu xây dựng hệ thống hỏi đáp thông minh sử dụng LLM kết hợp kỹ thuật Retrieval-Augmented Generation (RAG).
-  - Xác định các chức năng chính của hệ thống như:
-    - Trả lời câu hỏi về tuyển sinh.
-    - Tra cứu phương thức xét tuyển.
-    - Tra cứu học phí, chỉ tiêu và ngành đào tạo.
-    - Trích dẫn nguồn tài liệu khi trả lời.
+  - Đối tượng sử dụng là sinh viên, học viên và giảng viên có nhu cầu chia sẻ tài liệu học tập.
+  - Mục tiêu xây dựng nền tảng web có khả năng mở rộng, bảo mật cao, sử dụng kiến trúc container trên AWS.
+  - Xác định các chức năng chính: đăng nhập/đăng ký người dùng, đăng tải tài liệu lên S3, tìm kiếm, quản lý phiên bằng Redis.
 
-- Hiểu được vai trò của **Amazon S3** trong việc lưu trữ dữ liệu trên AWS.
+- Hiểu được vai trò của **Amazon VPC** trong việc cô lập và bảo vệ tài nguyên AWS:
+  - **Public Subnet**: Đặt ALB và NAT Gateway, tiếp nhận traffic từ bên ngoài.
+  - **Private Application Subnet**: Đặt ECS Tasks (NestJS), không tiếp xúc trực tiếp Internet.
+  - **Private DB Subnet**: Đặt RDS PostgreSQL, chỉ cho phép kết nối từ Application Subnet.
 
-- Nắm được các khái niệm cơ bản của Amazon S3:
-  - Bucket
-  - Object
-  - Key
-  - Storage Class
+- Nắm được các khái niệm cơ bản của **Amazon ECS Fargate**:
+  - Cluster, Service, Task Definition, Container Definition.
+  - Fargate Launch Type: không cần quản lý EC2 instance.
+  - Task Role và IAM Task Role để phân quyền cho container.
 
-- Biết cách tạo và quản lý S3 Bucket thông qua AWS Management Console.
+- Thực hành tạo VPC từ đầu:
+  - Tạo VPC với CIDR block phù hợp.
+  - Tạo Public Subnet và Private Subnet ở Availability Zone A.
+  - Gắn Internet Gateway cho Public Subnet, NAT Gateway cho Private Subnet.
+  - Cấu hình Security Group phân tách theo tầng: ALB SG → ECS SG → DB SG.
 
-- Thực hiện các thao tác cơ bản với Amazon S3:
-  - Tạo Bucket
-  - Upload Object
-  - Download Object
-  - Xóa Object
-  - Cấu hình Bucket Policy và Block Public Access
+- Khởi tạo ECS Cluster Fargate và thực hành chạy Task thử nghiệm.
 
-- Hiểu được vai trò của Amazon S3 trong hệ thống RAG, sử dụng làm nơi lưu trữ tài liệu tuyển sinh trước khi xây dựng Knowledge Base.
-
-- Tìm hiểu về **Amazon Bedrock** và các mô hình nền tảng (Foundation Models) do AWS cung cấp.
-
-- Hiểu được cách Amazon Bedrock hỗ trợ:
-  - Text Generation
-  - Chatbot
-  - Embedding
-  - Retrieval-Augmented Generation (RAG)
-
-- Nắm được quy trình tích hợp Amazon Bedrock vào hệ thống AI:
-  - Người dùng gửi câu hỏi.
-  - Hệ thống truy xuất tài liệu liên quan.
-  - Amazon Bedrock sinh câu trả lời dựa trên ngữ cảnh được cung cấp.
-
-- Bước đầu xây dựng kiến trúc tổng thể cho dự án chatbot tuyển sinh trên AWS sử dụng các dịch vụ:
-  - Amazon S3
-  - AWS Lambda
-  - Amazon API Gateway
-  - Amazon Bedrock
-  - Amazon OpenSearch Serverless (Vector Database)
-  - Amazon CloudWatch
-
-- **Thực hành Amazon EC2:**
-  - Khởi tạo EC2 Instance từ Amazon Machine Image (AMI).
-  - Cấu hình Security Group và Key Pair.
-  - Kết nối EC2 thông qua SSH.
-  - Tạo và gắn (Attach) Amazon EBS Volume vào EC2 Instance.
-  - Thực hiện mount EBS Volume và kiểm tra khả năng lưu trữ trên hệ điều hành Linux.
-  - Hiểu được mối quan hệ giữa EC2 và EBS cũng như các trường hợp sử dụng trong thực tế.
-
-- Đánh giá được tính khả thi của dự án và định hướng lựa chọn kiến trúc **Serverless** nhằm tối ưu chi phí, khả năng mở rộng và giảm công sức quản trị hạ tầng.
+- Đánh giá được tính khả thi của dự án và định hướng kiến trúc **Container-based trên AWS ECS Fargate**, kết hợp với CI/CD bằng GitHub Actions để tự động hóa quy trình build và deploy.

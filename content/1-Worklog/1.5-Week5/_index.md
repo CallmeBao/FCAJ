@@ -1,57 +1,46 @@
 ---
-title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Worklog Week 5"
+date: 2026-7-11
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Build the NestJS application and containerize it with Docker
+- Set up Amazon ECR and CI/CD pipeline with GitHub Actions
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be implemented this week:
+| Day | Task | Start Date | Completion Date | Reference Materials |
+| --- | ---- | ---------- | --------------- | ------------------- |
+| Mon | - Initialize NestJS project <br> - Build basic module structure (Auth, User, Document) | 07/06/2026 | 07/06/2026 | <https://docs.nestjs.com/> |
+| Tue | - Write multi-stage Dockerfile for NestJS <br> - Test local image build | 07/07/2026 | 07/07/2026 | |
+| Wed | - Create Amazon ECR Repository <br> - Push Docker image to ECR for the first time | 07/08/2026 | 07/08/2026 | <https://docs.aws.amazon.com/ecr/> |
+| Thu-Fri | - Set up GitHub Actions Workflow: build → push ECR → deploy ECS <br> - Configure IAM Role for GitHub Actions (OIDC) | 07/09/2026 | 07/10/2026 | <https://docs.github.com/en/actions> |
 
+### Achievements in Week 5:
 
-### Week 5 Achievements:
+- Successfully initialized a **NestJS** project with a clean module structure following Domain-Driven Design.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Understood how to organize code by modules in NestJS:
+  - Auth Module: registration, login, JWT.
+  - User Module: user profile management.
+  - Document Module: upload, search, and manage documents.
 
-* Successfully created and configured an AWS Free Tier account.
+- Successfully built a **multi-stage Dockerfile**:
+  - Stage 1 (builder): install dependencies and compile TypeScript.
+  - Stage 2 (production): copy dist and node_modules for a lean image.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Understood the workflow with **Amazon ECR**:
+  - Create a Private Repository.
+  - Authenticate Docker with ECR using AWS CLI.
+  - Tag and push image to ECR.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Set up a complete **GitHub Actions CI/CD Pipeline**:
+  - Triggered on push to the `main` branch.
+  - Build Docker image.
+  - Push image to Amazon ECR.
+  - Update ECS Service with the new image tag.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Configured **IAM OIDC** for GitHub Actions to authenticate securely without storing AWS credentials in secrets.

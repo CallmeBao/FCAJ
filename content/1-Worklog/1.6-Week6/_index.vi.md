@@ -8,34 +8,38 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-- Xây dựng Backend và tích hợp Large Language Model (LLM)
+- Triển khai ứng dụng NestJS lên Amazon ECS Fargate
+- Thiết lập Application Load Balancer, RDS PostgreSQL và ElastiCache Redis
 
 ### Các công việc cần triển khai trong tuần này:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Tìm hiểu AWS Lambda <br> - Xây dựng hàm xử lý yêu cầu từ người dùng | 13/07/2026 | 13/07/2026 | https://docs.aws.amazon.com/lambda/ |
-| 3 | - Tìm hiểu Amazon API Gateway <br> - Xây dựng REST API | 14/07/2026 | 14/07/2026 | https://docs.aws.amazon.com/apigateway/ |
-| 4 | - Tích hợp Amazon Bedrock với hệ thống RAG | 15/07/2026 | 15/07/2026 | https://docs.aws.amazon.com/bedrock/ |
-| 5 | - Kết nối Retrieval với LLM <br> - Sinh câu trả lời dựa trên ngữ cảnh truy xuất | 16/07/2026 | 16/07/2026 | |
-| 6 | - Kiểm thử API <br> - Ghi log bằng Amazon CloudWatch | 17/07/2026 | 17/07/2026 | https://docs.aws.amazon.com/cloudwatch/ |
+| 2 | - Tạo ECS Task Definition cho NestJS <br> - Cấu hình IAM Task Role | 13/07/2026 | 13/07/2026 | <https://docs.aws.amazon.com/ecs/> |
+| 3 | - Tạo Application Load Balancer (ALB) <br> - Cấu hình Target Group và Listener | 14/07/2026 | 14/07/2026 | <https://docs.aws.amazon.com/elasticloadbalancing/> |
+| 4 | - Khởi tạo RDS PostgreSQL (Single-AZ) trong Private DB Subnet <br> - Cấu hình Database Security Group | 15/07/2026 | 15/07/2026 | <https://docs.aws.amazon.com/rds/> |
+| 5 | - Thiết lập ElastiCache Redis cho session cache <br> - Lưu trữ credentials bằng AWS Secrets Manager | 16/07/2026 | 16/07/2026 | <https://docs.aws.amazon.com/elasticache/> |
+| 6 | - Tạo ECS Service và deploy lần đầu <br> - Kiểm thử kết nối end-to-end qua ALB | 17/07/2026 | 17/07/2026 | |
 
 ### Kết quả đạt được tuần 6:
 
-- Hiểu được kiến trúc Backend của hệ thống RAG trên AWS.
+- Triển khai thành công ứng dụng NestJS lên **Amazon ECS Fargate** trong Private Application Subnet.
 
-- Xây dựng thành công REST API bằng Amazon API Gateway và AWS Lambda.
+- Cấu hình **Application Load Balancer (ALB)**:
+  - Listener port 80/443.
+  - Target Group kết nối đến ECS Tasks.
+  - Health check path `/health`.
 
-- Hoàn thành việc tích hợp Amazon Bedrock vào hệ thống.
+- Khởi tạo **RDS PostgreSQL (Single-AZ)** trong Private DB Subnet:
+  - Chỉ cho phép kết nối từ ECS Security Group.
+  - Cấu hình thông số DB qua Parameter Group.
 
-- Xây dựng luồng xử lý câu hỏi từ người dùng:
-  - Tiếp nhận câu hỏi.
-  - Thực hiện Retrieval.
-  - Chuyển ngữ cảnh tới LLM.
-  - Sinh câu trả lời.
+- Tích hợp **ElastiCache Redis** làm lớp cache cho session và tăng hiệu năng truy vấn.
 
-- Kiểm thử API bằng Postman và xác nhận hệ thống trả về kết quả đúng.
+- Lưu trữ an toàn các thông tin nhạy cảm (DB password, JWT secret) bằng **AWS Secrets Manager**:
+  - ECS Task tự động fetch secrets tại thời điểm khởi động container.
+  - IAM Task Role được cấu hình quyền `secretsmanager:GetSecretValue`.
 
-- Thiết lập CloudWatch Logs để theo dõi quá trình xử lý và hỗ trợ gỡ lỗi.
+- Thiết lập **App Auto Scaling** cho ECS Service dựa trên CPU/Memory Utilization.
 
-- Hoàn thiện Backend cho chatbot tuyển sinh.
+- Kiểm thử thành công toàn bộ luồng: User → CloudFront → ALB → ECS Task → RDS/Redis.

@@ -6,34 +6,28 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+---
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+Over the course of **8 weeks** participating in the **First Cloud Journey** program, I gradually learned about AWS services and applied this knowledge to build a real-world project.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+The chosen project is **EduShare** — a web-based document sharing platform with a backend built in **NestJS**, containerized with Docker, and deployed on **Amazon ECS Fargate**. The system integrates an automated CI/CD pipeline via GitHub Actions, multi-layer security with AWS WAF and CloudFront, and uses RDS PostgreSQL, ElastiCache Redis, and Amazon S3 for data storage.
+
+The worklog below records the tasks performed, knowledge acquired, and results achieved each week.
+
+## Worklog Content
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [Exploring Compute and Networking services on AWS (Amazon EC2, Amazon VPC, Amazon EBS)](1.2-week2/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 3:** [Exploring Database services on AWS (Amazon RDS and Amazon DynamoDB)](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 4:** [EduShare project proposal, researching Amazon VPC, Amazon ECS Fargate, and designing system architecture](1.4-week4/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 5:** [Building the NestJS application, multi-stage Dockerfile, Amazon ECR, and setting up CI/CD pipeline with GitHub Actions](1.5-week5/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 6:** [Deploying Amazon ECS Fargate, Application Load Balancer, RDS PostgreSQL, ElastiCache Redis, and AWS Secrets Manager](1.6-week6/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [Setting up Amazon CloudFront, AWS WAF, Route 53, and integrating Amazon S3 Presigned URL](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 8:** [Finalizing the system, optimizing architecture, building the Workshop, and deploying to GitHub Pages](1.8-week8/)
