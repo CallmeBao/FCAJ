@@ -16,8 +16,6 @@ Vì vậy, mình đã tìm hiểu một giải pháp thay thế: Tự dựng (Se
 
 ## 1. Tổng quan kiến trúc và các bước triển khai
 
-![Tổng quan kiến trúc](/images/3-Blog/3.3-Blog3/blog3.png)
-
 Kiến trúc này được thiết kế để chia tách rõ ràng thành 2 lớp chính: Knowledge Processing Layer đảm nhận việc số hóa dữ liệu batch quy mô lớn và Response Generation Layer xử lý truy vấn thời gian thực của người dùng.
 
 ### A. Luồng xử lý và số hóa dữ liệu
@@ -55,3 +53,6 @@ Kiến trúc Self-Managed RAG kết hợp Amazon EKS + S3 Vectors là một gi�
 * [AWS Storage Blog – Building self-managed RAG applications with Amazon EKS and Amazon S3 Vectors](https://aws.amazon.com/blogs/storage/building-self-managed-rag-applications-with-amazon-eks-and-amazon-s3-vectors/)
 * [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/)
 * [Ray on Kubernetes (KubeRay)](https://docs.ray.io/en/latest/cluster/kubernetes/index.html)
+
+<!-- ### 🔗 Bài viết đã đăng trên Facebook Group
+👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2227063374725289/) -->

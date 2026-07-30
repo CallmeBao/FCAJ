@@ -61,3 +61,6 @@ Giải pháp tự động hóa bằng AWS Lambda + CloudWatch + SNS là một s�
 * [AWS Database Blog – Automatically scale storage for Amazon RDS Multi-AZ DB clusters using AWS Lambda](https://aws.amazon.com/blogs/database/automatically-scale-storage-for-amazon-rds-multi-az-db-clusters-using-aws-lambda/)
 * [Amazon RDS Multi-AZ deployments documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+
+<!-- ### 🔗 Bài viết đã đăng trên Facebook Group
+👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/posts/2224218628343097/) -->
