@@ -35,4 +35,4 @@ This is the event that left me with the most impressions, because it was the fir
 
 Since it was the first event, I had some shortcomings in capturing special moments, but I still got 1 cute moment when the mentors played Hieuthuhai's music.
 ![Cute moment at the end of the event](/images/4-Events/4.3-Event3/Hieu2.jpg)
-![Group photo](/images/4-Events/4.3-Event3/722709384_4487688904809051_5504640849504060712_n.jpg)
+![Group photo](/images/4-Events/4.3-Event3/t%E1%BA%ADp%20th%E1%BB%83.jpg)

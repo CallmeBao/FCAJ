@@ -34,5 +34,5 @@ Những kiến thức mình học được trong buổi event này đều vô c�
 
 Là event đầu nên mình có một số thiếu sót trong việc ghi những khoảnh khắc đặc biệt, nhưng vẫn có được 1 khoảnh khắc dễ thương khi các anh chị mentor mở nhạc của Hieuthuhai. 
 ![Khoảnh khắc vô cùng dễ thương cuối buổi event](/images/4-Events/4.3-Event3/Hieu2.jpg)
-![Ảnh tập thể](/images/4-Events/4.3-Event3/722709384_4487688904809051_5504640849504060712_n.jpg)
+![Ảnh tập thể](/images/4-Events/4.3-Event3/t%E1%BA%ADp%20th%E1%BB%83.jpg)
 
