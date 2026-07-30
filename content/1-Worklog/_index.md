@@ -10,8 +10,6 @@ pre: " <b> 1. </b> "
 
 Over the course of **8 weeks** participating in the **First Cloud Journey** program, I gradually learned about AWS services and applied this knowledge to build a real-world project.
 
-The chosen project is **EduShare** — a web-based document sharing platform with a backend built in **NestJS**, containerized with Docker, and deployed on **Amazon ECS Fargate**. The system integrates an automated CI/CD pipeline via GitHub Actions, multi-layer security with AWS WAF and CloudFront, and uses RDS PostgreSQL, ElastiCache Redis, and Amazon S3 for data storage.
-
 The worklog below records the tasks performed, knowledge acquired, and results achieved each week.
 
 ## Worklog Content
