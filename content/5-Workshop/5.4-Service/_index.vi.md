@@ -15,7 +15,6 @@ Trong phần này, chúng ta sẽ khởi tạo các dịch vụ lưu trữ dữ 
 - **Load Balancer & SSL:** Xin cấp phát chứng chỉ SSL/TLS miễn phí qua dịch vụ **ACM** (tại region `us-east-1`), sau đó thiết lập **ALB** cùng các **Target Group** ở khu vực chính để điều phối lưu lượng truy cập an toàn vào các container Fargate sau này.
 
 
-
 #### Nội dung
 - [1. Create S3](5.4.1-s3_cors/)
 - [2. Tạo Database](5.4.2-rds/)
