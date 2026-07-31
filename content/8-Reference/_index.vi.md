@@ -1,27 +1,27 @@
 ---
-title: "Tài nguyên khác"
+title: "Reference"
 date: 2026-07-31
 weight: 8
 chapter: false
 pre: " <b> 8. </b> "
 ---
 
-### Nguồn tham khảo
+### References
 
-Phần này tổng hợp các liên kết tài nguyên liên quan đến dự án **EduShare** được xây dựng trong quá trình thực tập.
+This section consolidates all resource links related to the **EduShare** project built during the internship.
 
 ---
 
-### 🔗 Liên kết dự án
+### 🔗 Project Links
 
-| Tài nguyên | Liên kết |
+| Resource | Link |
 | --- | --- |
 | 📁 **GitHub Repository** | [github.com/lenguyen2005/edu-share](https://github.com/lenguyen2005/edu-share) |
-| 🌐 **Demo ứng dụng** | [EduShare Demo](http://edushare-alb-580020341.us-east-1.elb.amazonaws.com/) |
+| 🌐 **Live Demo** | [EduShare Demo](http://edushare-alb-580020341.us-east-1.elb.amazonaws.com/) |
 
 ---
 
-### 📚 Tài liệu AWS tham khảo
+### 📚 AWS Documentation References
 
 - [Amazon ECS Documentation](https://docs.aws.amazon.com/ecs/)
 - [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/)
