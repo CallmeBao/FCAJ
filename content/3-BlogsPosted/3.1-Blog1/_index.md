@@ -53,5 +53,5 @@ This advanced multi-tenant RAG architecture is a great reference pattern for bui
 
 ---
 
-<!-- ### 🔗 Published Post on Facebook Group
-👉 **Post Link:** [AWS Study Group FB - Secure Multi-Tenant RAG Post](https://www.facebook.com/groups/awsstudygroupfcj/posts/2224218628343097/) -->
+### 🔗 Published Post on Facebook Group
+👉 **Post Link:** [AWS Study Group FB - Secure Multi-Tenant RAG Post](https://www.facebook.com/groups/awsstudygroupfcj/posts/2224218628343097/)

@@ -54,5 +54,5 @@ Kiến trúc Self-Managed RAG kết hợp Amazon EKS + S3 Vectors là một gi�
 * [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/)
 * [Ray on Kubernetes (KubeRay)](https://docs.ray.io/en/latest/cluster/kubernetes/index.html)
 
-<!-- ### 🔗 Bài viết đã đăng trên Facebook Group
-👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2227063374725289/) -->
+### 🔗 Bài viết đã đăng trên Facebook Group
+👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2227063374725289/)

@@ -53,6 +53,6 @@ Giải pháp đơn giản nhất chắc có lẽ là tạo mỗi phòng ban mộ
 * [Amazon Verified Permissions Developer Guide](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html)
 
 ---
-<!-- 
+
 ### 🔗 Bài viết đã đăng trên Facebook Group
-👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/posts/2224218628343097/) -->
+👉 **Link bài viết:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/posts/2224218628343097/)

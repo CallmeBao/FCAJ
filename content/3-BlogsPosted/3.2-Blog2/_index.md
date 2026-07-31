@@ -64,3 +64,6 @@ The automation solution using AWS Lambda + CloudWatch + SNS is an extremely valu
 * [AWS Database Blog – Automatically scale storage for Amazon RDS Multi-AZ DB clusters using AWS Lambda](https://aws.amazon.com/blogs/database/automatically-scale-storage-for-amazon-rds-multi-az-db-clusters-using-aws-lambda/)
 * [Amazon RDS Multi-AZ deployments documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+
+### 🔗 Published Post on Facebook Group
+👉 **Post Link:** [AWS Study Group FB - Secure Multi-Tenant RAG Post](https://www.facebook.com/groups/660548818043427/user/100025934673107)
