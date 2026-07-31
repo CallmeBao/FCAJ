@@ -8,7 +8,7 @@ pre: " <b> 8. </b> "
 
 ### References
 
-This section consolidates all resource links related to the **EduShare** project built during the internship.
+Dưới đây là toàn bộ nguồn tham khảo nhóm đã sử dụng cho dự án EduShare
 
 ---
 
