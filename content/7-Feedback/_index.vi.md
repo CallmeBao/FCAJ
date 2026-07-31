@@ -19,10 +19,5 @@ Nếu mọi người chưa biết thì thị trường điện toán đám mây 
 ### Đề xuất
 Tuy nhiên vẫn có một vấn đề mà mình thấy là chưa thuận lợi nhất cho các bạn sinh viên thực tập. Đó là việc đăng ký lên văn phòng khá là may rủi, và nếu đăng ký thành công thì thời gian báo trước cũng khá là ngắn (chỉ 1 ngày trước ngày đăng ký). Mong các anh chị mentor/admin sẽ có một giải pháp để giúp các bạn sinh viên thuận tiện hơn trong vấn đề này. 
 
-Cuối cùng mình chỉ muốn nói: <br>
-"Mình yêu FCAJ" <br>
-"Mình yêu FCAJ" <br>
-"Mình yêu FCAJ" <br> 
-Điều gì quan trọng nói 3 lần!
 
 

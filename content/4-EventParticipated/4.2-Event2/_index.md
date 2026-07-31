@@ -36,5 +36,3 @@ In addition, the sharings from Mr. Giuseppe Marazzotta were extremely meaningful
 ### Event Experience
 This was perhaps the most special event I have ever attended since I learned about FCAJ. Not only the number of speakers but also the number of audience members was several times higher than normal events. Furthermore, the atmosphere of the event that day was very comfortable. This was probably because the teams were quite young and energetic; they not only shared knowledge but also transmitted motivation and their passion for creativity. It was quite a pity that there wasn't enough time for the teams to expand the Q&A session, but that day was still an extremely useful experience. Perhaps in the future, I will also seek opportunities to participate in a hackathon.
 
-#### Some event photos
-![Group photo](/images/4-Events/4.2-Event1/t%E1%BA%ADp%20th%E1%BB%83.jpg)

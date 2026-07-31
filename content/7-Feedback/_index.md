@@ -19,9 +19,3 @@ In case you didn't know, the Cloud Computing market in Vietnam is one of the fas
   
 ### Suggestions
 However, there is still one issue that I feel is not the most convenient for student interns. That is, registering to work at the office relies quite a bit on luck, and if the registration is successful, the advance notice is quite short (only 1 day prior). I hope the mentors/admins will find a solution to make this process more convenient for students. 
-
-Finally, I just want to say: <br>
-"I love FCAJ" <br>
-"I love FCAJ" <br>
-"I love FCAJ" <br> 
-Important things must be said 3 times!
