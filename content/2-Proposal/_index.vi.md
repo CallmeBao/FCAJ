@@ -100,14 +100,15 @@ Kiến trúc bao gồm 4 lớp chính:
 
 | Dịch vụ | Chi phí ước tính (USD/tháng) |
 | ------- | --------------------------- |
-| Amazon ECS Fargate (0.5 vCPU, 1 GB) | ~15 |
-| Amazon RDS PostgreSQL db.t3.micro | ~15 |
+| Amazon ECS Fargate (0.5 vCPU, 1 GB) | ~18 |
+| Amazon RDS PostgreSQL db.t3.micro | ~14 |
 | ElastiCache Redis cache.t3.micro | ~12 |
-| Amazon CloudFront (10 GB transfer) | ~1 |
+| Amazon CloudFront (10 GB transfer) | ~0 |
 | Amazon S3 (10 GB storage) | ~0.23 |
 | Application Load Balancer | ~16 |
+| WAF (2 rule) | ~1
 | NAT Gateway | ~32 |
-| **Tổng ước tính** | **~91 USD/tháng** |
+| **Tổng ước tính** | **~93 USD/tháng** |
 
 ---
 
