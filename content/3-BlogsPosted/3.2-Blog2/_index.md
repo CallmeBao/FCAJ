@@ -66,4 +66,4 @@ The automation solution using AWS Lambda + CloudWatch + SNS is an extremely valu
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 ### 🔗 Published Post on Facebook Group
-👉 **Post Link:** [AWS Study Group FB - Secure Multi-Tenant RAG Post](https://www.facebook.com/groups/660548818043427/user/100025934673107)
+👉 **Post Link:** [AWS Study Group FB](https://www.facebook.com/groups/660548818043427/user/100025934673107)

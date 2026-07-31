@@ -55,4 +55,4 @@ The Self-Managed RAG architecture combining Amazon EKS + S3 Vectors is an extrem
 * [Ray on Kubernetes (KubeRay)](https://docs.ray.io/en/latest/cluster/kubernetes/index.html)
 
 ### 🔗 Published Post on Facebook Group
-👉 **Post Link:** [AWS Study Group FB - Secure Multi-Tenant RAG Post](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2227063374725289/)
+👉 **Post Link:** [AWS Study Group FB](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2227063374725289/)
