@@ -18,6 +18,7 @@ This section consolidates all resource links related to the **EduShare** project
 | --- | --- |
 | 📁 **GitHub Repository** | [github.com/lenguyen2005/edu-share](https://github.com/lenguyen2005/edu-share) |
 | 🌐 **Live Demo** | [EduShare Demo](http://edushare-alb-580020341.us-east-1.elb.amazonaws.com/) |
+| 🎬 **Demo Video** | [Watch on Google Drive](https://drive.google.com/file/d/1mKaDrhX-KlLExbmxGTlOuxx0FxYmF5m7/view) |
 
 ---
 
